@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Csharpeval by RupertAvery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Csharpeval</h1>
+      <h2 class="project-tagline">C# Expression Evaluator</h2>
+      <a href="https://github.com/RupertAvery/csharpeval" class="btn">View on GitHub</a>
+      <a href="https://github.com/RupertAvery/csharpeval/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/RupertAvery/csharpeval/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p>C# does not include a built-in method to evaluate a string during runtime, like Javascript's eval() or VBScript's Eval().</p>
+
+<p>ExpressionEvaluator is a lightweight, simple and free library capable of parsing and compiling simple to medium complexity C# expressions. It features a Antlr-based tokenizer and parser and generates a LINQ Expression tree which is then compiled into a function.</p>
+
+<p>Applications for an expression parser and compiler are usually in the form of embedded code or user-defined expressions that need to be executed against runtime objects. </p>
+
+<h1>
+<a id="how-can-i-use-this-library" class="anchor" href="#how-can-i-use-this-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How can I use this library?</h1>
+
+<ul>
+<li>An <a href="http://www.windowsphone.com/en-us/store/app/experimental-music-compiler/370af565-51c8-4cd0-af6a-32d1e9a6690a">Experimental Music Compiler</a> for Windows Mobile</li>
+<li>Dynamic data-bound XML templates</li>
+<li>User-defined conditional code stored in configuration files</li>
+<li>Customer-defined queries</li>
+<li>User-defined execution parameters for pluggable controls</li>
+</ul>
+
+<p>If you have downloaded and used this library, I'd like to know about it's usage! Feel free to <a href="https://www.codeplex.com/site/users/contact/rupertavery?OriginalUrl=https://csharpeval.codeplex.com">let me know about it</a>.</p>
+
+<h1>
+<a id="nuget" class="anchor" href="#nuget" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NuGet</h1>
+
+<p>Expression Evaluator is now available via <a href="https://www.nuget.org/packages/ExpressionEvaluator">NuGet</a></p>
+
+<h1>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started</h1>
+
+<p>See <strong>Usage</strong> and <strong>Sample Expressions</strong> under <a href="https://csharpeval.codeplex.com/documentation">Documentation</a></p>
+
+<h1>
+<a id="latest-updates" class="anchor" href="#latest-updates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Latest Updates</h1>
+
+<p>For more details see [Updates]</p>
+
+<h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h1>
+
+<ul>
+<li>
+<em>Compute</em>: Arithmetic operators: +- * / % ^</li>
+<li>
+<em>Compare</em>: Relational operators: == != &lt; &gt; &lt;= &gt;=</li>
+<li>
+<em>Assign</em>: Set values with the = operator</li>
+<li>
+<em>Test</em>: Logical Operators: ! &amp; | (bitwise logic) and &amp;&amp; || (short circuit logic)</li>
+<li>Expression grouping with parentheses ( )</li>
+<li>Index accessors {"[ ]"}</li>
+<li>Supports <em>dynamic</em> objects (including classes that implement <em>IDynamicMetaObjectProvider</em> such as <em>ExpandoObject</em>)</li>
+<li>Context: Register and access external types and symbols through the <em>TypeRegistry</em>
+</li>
+<li>Strings: (enclosed in '<em>single quotes</em>' and string concatenation with +)</li>
+<li>
+<em>true</em>, <em>false</em>, <em>null</em> literals</li>
+<li>Declarative typing of numbers using d/f/m/l/u/ul suffixes</li>
+<li>Implicit conversion of numerical expressions</li>
+<li>Member access operator (.) for any valid expression.  Access properties, fields and methods of types, objects and expressions</li>
+<li>Pre-registered default types e.g. bool, int, double, float, char, string</li>
+<li>Supports nested function calls (x.method(y.method(z.method()), y.method2()))</li>
+</ul>
+
+<h1>
+<a id="donate" class="anchor" href="#donate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Donate</h1>
+
+<p>Expression Evaluator is 100% free, but if you would like to support the project in any way please do so.</p>
+
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=rupert.avery@gmail.com&amp;lc=PH&amp;item_name=Expression%20Evaluator&amp;currency_code=USD&amp;bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"><img src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_cc_147x47.png" alt="Donate"></a></p>
+
+<h1>
+<a id="disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disclaimer</h1>
+
+<p>This is <em>not</em> a fully C#-compliant compiler, and as such features may be missing and there may be bugs or discrepancies in how the parser and compiler work.  If you wish to use this library in production code do so at your own risk.</p>
+
+<p><a href="http://www.e-iceblue.com/Spire.PDF/Spire.PDF-for-.NET.html?aff_id=96&amp;amp;amp;banner_id=15"><img src="http://www.e-iceblue.com/components/com_affiliate/banners/3ca481a23a214e4c43b56861a904e189.gif" alt="E-iceblue"></a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/RupertAvery/csharpeval">Csharpeval</a> is maintained by <a href="https://github.com/RupertAvery">RupertAvery</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
