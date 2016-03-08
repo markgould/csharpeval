@@ -57,7 +57,6 @@
     <Compile Include="Domain\ClassA.cs" />
     <Compile Include="Domain\Container.cs" />
     <Compile Include="Domain\Helper.cs" />
-    <Compile Include="Domain\Helper2.cs" />
     <Compile Include="DynamicsPerformanceTest.cs" />
     <Compile Include="Domain\Fact.cs" />
     <Compile Include="Domain\FunctionCache.cs" />
