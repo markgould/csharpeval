@@ -6,8 +6,8 @@
     <ProjectGuid>{98939DC9-FB10-43AB-ABE3-2A15DE00EB9B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTestProject1</RootNamespace>
-    <AssemblyName>UnitTestProject1</AssemblyName>
+    <RootNamespace>ExpressionEvaluator.Tests</RootNamespace>
+    <AssemblyName>ExpressionEvaluator.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,6 +57,7 @@
     <Compile Include="Domain\ClassA.cs" />
     <Compile Include="Domain\Container.cs" />
     <Compile Include="Domain\Helper.cs" />
+    <Compile Include="Domain\Helper2.cs" />
     <Compile Include="DynamicsPerformanceTest.cs" />
     <Compile Include="Domain\Fact.cs" />
     <Compile Include="Domain\FunctionCache.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Domain\StaticFunctionCache.cs" />
     <Compile Include="Domain\TestClass.cs" />
     <Compile Include="DynamicTests.cs" />
+    <Compile Include="InheritanceTests.cs" />
     <Compile Include="OperatorTests.cs" />
     <Compile Include="ScopeTests.cs" />
     <Compile Include="UnitTest.cs" />

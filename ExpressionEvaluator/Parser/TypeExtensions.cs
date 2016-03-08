@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
+using System.Reflection;
 
 namespace ExpressionEvaluator.Parser
 {
@@ -78,6 +79,17 @@ namespace ExpressionEvaluator.Parser
         public static bool IsNullable(this Type type)
         {
             return Nullable.GetUnderlyingType(type) != null;
+        }
+
+        public static PropertyInfo GetProperty2(this Type type, string memberName)
+        {
+            if (!type.IsInterface)
+                return type.GetProperty(memberName);
+
+            return (new[] { type })
+                   .Concat(type.GetInterfaces())
+                   .Select(i => i.GetProperty(memberName))
+                   .FirstOrDefault(p => p != null);
         }
 
     }
